@@ -44,13 +44,11 @@ while state.get() != 4:
         if output_ADC_val.any():
             for i in range (0,1000):
                 print(output_ADC_val.get())
-                time.sleep(0.01)
             state.put(2)
     elif state.get() == 3:
         if time_val.any():
             for i in range (0,1000):
                 print(time_val.get())
-                time.sleep(0.01)
             state.put(4)
             print('done')
     elif state.get() == 4:
