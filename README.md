@@ -33,8 +33,8 @@ circuit by plotting ADC readings verus time.
 ![RC Circuit Step Response](/images/ADC_Data_TimeConstant.png)
 
 Here we have the plot of ADC output readings versus time. As you can see, this is a first order transient response.
-The experimental time constant is shown on the plot and is ... seconds. However, our theorectical time constant 
-was calculated to be .335 seconds by usint the equation τ = RC. This results in an experimental error of ... %. 
+The experimental time constant is shown on the plot and is .34 seconds. However, our theorectical time constant 
+was calculated to be .335 seconds by usint the equation τ = RC. This results in an experimental error of 1.5 %. 
 Additionally, we can see that the interrupt callback did indeed speed up our data processing as data was recorded
 at approximately every 1 microsecond. We had no gaps in data, as the plot shows a constant stream of data with 
 no inconsistencies in distance between data points.
