@@ -61,7 +61,7 @@ with serial.Serial('COM27', 115200) as s_port:
         ## Ticks A data in a string format
         time_string = time_data.decode('Ascii')
         
-        # Converts ADC data to intergers
+        # Converts ADC data to integers
         for i in ADC_string:
             if(i.isnumeric()):
                 string += i
@@ -72,7 +72,7 @@ with serial.Serial('COM27', 115200) as s_port:
                 except:
                     pass
                 
-        # Converts Time data to intergers        
+        # Converts Time data to integers        
         for i in time_string:
             if(i.isnumeric()):
                 string += i
