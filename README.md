@@ -16,9 +16,9 @@ The main task configures the Nucleo pins and initializes the Queue variables to 
 for time and ADC readings. Additionally, the main file creates an interrupt that reads and stores ADC and time
 data when called. This interrupt method is continually triggered with the callback method shown below.
 
-'''python
+```python
 tim.callback(tim_irq)
-'''
+```
 
 Finally, we have a state machine that handles the printing of ADC readings and time data, printing all 1500 data
 points of each queue. Once printing is complete, the input voltage pin is set back to low and the program is 
